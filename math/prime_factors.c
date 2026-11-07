@@ -2,7 +2,7 @@
 void prime_factorization(int n);
 
 int main(void) {
-    prime_factorization(50);   // 2 2 3 3
+    prime_factorization(50);   // 2, 5, 5
     printf("\n");
 
 }

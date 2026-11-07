@@ -6,7 +6,7 @@ void mario3(unsigned int n);
 void mario4(unsigned int n);
 
 int main() {
-    unsigned int n;
+    unsigned int n; // size_t unsigned int
     printf("Enter the number of stairs: ");
     scanf("%u", &n);
     mario(n);
