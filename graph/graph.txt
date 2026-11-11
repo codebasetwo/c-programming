@@ -1,0 +1,25 @@
+graph is an ordered pair of set V vertices and E edges
+G = (V, E)
+multi edges
+self loop
+A graph with no self loop or multi edge is called simple graph
+adjacency matrix - dense
+adjacency list - sparse
+
+finding all nodes connected to adjacent a given node
+finding if two given node are connected
+remember in a simple graph if |V|= n then 0 <= |E| <= n(n-1) if directed
+
+if undirected 0 <= |E <= n(n-1) / 2
+so |V| |E| = v(v-1) = 0(v2) for space complexity
+finding adjacent node with edgelise running time = O(E)
+check if given nodes are connected O(E)
+so in a graph anything running in order of edges is considered very costly
+
+adjacency matrix
+matrix of (V x V)
+for an undirected graph
+operation of finding adjacency nodes = O(V)
+finding if two nodes are connected = O(1) if indices are given fi names are given we scan the vertex list to get index so we get O(V
+we can use a hashtable  to store the names of vertex so that scanning the vertex will take constant time
+if graph is dense adjacency matrix is good if sparse bad

@@ -301,7 +301,7 @@ int in_order_succesor(struct BNode* root, int data)
     // Search for the data
     struct BNode *cur = search2(root, data); // O(h) for search
     if (cur == NULL) return -1;
-    // Case 1: BNode has right subtree
+    // Case 1: BNode has right subtree find the min in the right subtree
     if (cur->right != NULL){
         struct BNode* tmp = cur->right;
         while( tmp != NULL){
