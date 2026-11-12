@@ -8,8 +8,8 @@ void print3(const char * string);
 
 int main() {
     char C[5] = "Hello"; // char C[] = "JOHN" char C[6] = {'E', 'M', 'E', 'K', 'A', '\0'}; stores in stack
-    int *B= "hello" // stores in text section of the program compile time constant
-    B[1] = 'A';
+    const char *B= "hello" // stores in text section of the program compile time constant
+    // B[1] = 'A';  // undefined beahviour
     int len = strlen(C);
     printf("The length of C: %d and name in C: %s\n", len, C);
     printf("Size of bytes of C: %ld\n", sizeof(C));

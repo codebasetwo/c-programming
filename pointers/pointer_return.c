@@ -16,8 +16,7 @@ int* add2(int *a, int *b)
 {
     int *c = (int*)malloc(sizeof(int));
     *c = (*a) + (*b); // use malloc instead for heap memory
-    // not okay to return address of local variable
-    return c; // returning this is bad because it may no longer be available in stack
+    return c; // okay beacuse it leaves in the heap
 }
 
 
